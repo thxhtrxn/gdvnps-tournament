@@ -1,0 +1,6 @@
+{
+  "editor.inlineSuggest.enabled": false,
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
