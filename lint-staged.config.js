@@ -4,5 +4,5 @@
  */
 
 export default {
-  "*": ["pnpm lint", "pnpm format:write"],
+  "*": ["pnpm format:write", "pnpm lint"],
 };
