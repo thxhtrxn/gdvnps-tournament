@@ -4,7 +4,7 @@ import { splitProps, Show } from "solid-js";
 import { Root as ButtonPrimitive } from "@kobalte/core/button";
 import { Root as ButtonLinkPrimitive } from "@kobalte/core/link";
 import { cva, type VariantProps } from "class-variance-authority";
-import styles from "./button.module.scss";
+import styles from "./Button.module.scss";
 
 export const buttonVariants = cva(styles.button, {
   variants: {
