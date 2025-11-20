@@ -1,2 +1,5 @@
-// eslint-disable-next-line no-undef
-module.exports = { extends: ["@commitlint/config-conventional"] };
+/** @type {import('@commitlint/types').UserConfig} */
+export default {
+  extends: ["@commitlint/config-conventional"],
+  ignores: [(commit) => commit.includes("Signed-off-by: dependabot[bot]")],
+};
