@@ -42,7 +42,6 @@ export function Button(props: ButtonProps) {
       when={props.type === "link"}
       fallback={
         <ButtonPrimitive
-          type="button"
           data-slot="button"
           gdvnps-comp="button"
           class={buttonVariants({
@@ -55,7 +54,6 @@ export function Button(props: ButtonProps) {
       }
     >
       <ButtonLinkPrimitive
-        type="button"
         data-slot="button"
         gdvnps-comp="button-link"
         class={buttonVariants({

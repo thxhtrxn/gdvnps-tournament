@@ -21,7 +21,9 @@
     "@tanstack/router-plugin": "^1.135.2",
     "@tanstack/solid-router": "^1.135.2",
     "@tanstack/solid-router-devtools": "^1.135.2",
+    "animate.css": "^4.1.1",
     "lucide-solid": "^0.554.0",
+    "motion": "^12.23.24",
     "normalize.css": "^8.0.1",
     "solid-js": "^1.9.10",
     "vinxi": "^0.5.8"

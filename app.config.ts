@@ -6,13 +6,12 @@ import devtools from "solid-devtools/vite";
 
 export default defineConfig({
   vite: {
-    // @ts-expect-error Vite 7 plugin types
     plugins: [
       devtools({
         /* features options - all disabled by default */
         autoname: true, // e.g. enable autoname
-      }),
-      tanstackRouter({ target: "solid" }),
+      }) as any,
+      tanstackRouter({ target: "solid" }) as any,
     ],
 
     css: {
@@ -23,6 +22,16 @@ export default defineConfig({
     },
     build: {
       cssMinify: "lightningcss",
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("node_modules")) {
+              return id.toString().split("node_modules/")[1].split("/")[0].toString();
+            }
+          },
+        },
+      },
     },
   },
 });
