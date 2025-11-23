@@ -2,7 +2,6 @@
 
 ## Code of Conduct
 
-Help us keep Angular open and inclusive.
 Please read and follow our [Code of Conduct](CODE-OF-CONDUCT.md)
 
 ## Development guide
